@@ -8,7 +8,7 @@ int main(void) {
 	L = createLinkedList_h();		//공백 리스트 생성
 
 	printf("(1) 리스트에 [월], [수], [일] 노드 삽입하기! \n");
-	insertLastNode(L, "월");
+	insertFirstNode(L, "월");
 	insertLastNode(L, "수");
 	insertLastNode(L, "일");
 	printList(L);
@@ -24,8 +24,8 @@ int main(void) {
 	insertMiddleNode(L, p, "금");
 	printList(L);
 
-	printf("\n(4) 리스트에서 [일] 노드 삭제하기! \n");
-	p = searchNode(L, "일");
+	printf("\n(4) 리스트에서 [월] 노드 삭제하기!\n");
+	p = searchNode(L, "월");
 	deleteNode(L, p);
 	printList(L);
 
